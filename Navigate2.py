@@ -78,6 +78,7 @@ def IsNorth ():
         return False
     return False
 
+def IsSouth (): 
 
 
 

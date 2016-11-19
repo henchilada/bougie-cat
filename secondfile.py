@@ -1,5 +1,9 @@
 #secondfile.py
 
+name = str(input("What is your name, man?"))
 
-def SmallChange ("name","color"):
-	__init__()
+x=0
+def Person ("name","color"):
+	while x > 0:
+		print ("This is " + Name)
+

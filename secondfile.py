@@ -6,4 +6,7 @@ x=0
 def Person ("name","color"):
 	while x > 0:
 		print ("This is " + Name)
+	x+=1
+
+#start building conversation log `
 

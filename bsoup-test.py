@@ -7,7 +7,8 @@ import datetime
 from pathlib import Path
 
 # declaring a bunch of variables and doing some string and type manipulation
-sourcepage = "https://www.happyballs.com/collections/standard-antenna-balls"
+sourcepage = "https://myip.ms/browse/sites/1/ipID/23.227.38.32/ipIDii/23.227.38.32/sort/6/asc/1#sites_tbl_top"
+shortname = str.upper(sourcepage[8:15]) #should replace this with regex 
 mydoc = urlopen(sourcepage)
 soup = BeautifulSoup(mydoc, "lxml")
 website_title = "Website Title: " + str(soup.title.string)
@@ -19,9 +20,10 @@ my_file = Path("rawpulldown.txt")
 # here's our main writing function
 def NewWrite(): 
 	file = open("rawpulldown.txt", "a+")
-	file.write("Entry #"+entry+" : " +"\n")
+	file.write("Entry No.: "+entry +"\n")
 	file.write("Timestamp: " + timestamp + " (UTC) " +"\n") 
-	file.write("Site URL: "+sourcepage + "\n" + "\n")
+	file.write("Site Name: " + shortname + "\n")
+	file.write("Full URL: "+sourcepage + "\n" + "\n")
 	file.write(website_title)
 	file.write("\n")
 	file.close
@@ -39,4 +41,7 @@ Filechecker()
 NewWrite()
 
 # finally a print statement to confirm the program ended without errors
-print("Confirmed! You saved the scrape from " + sourcepage)
+print("Confirmed! You saved the scrape from " + shortname
+	)
+
+# need to grab class="JCLRgrips"

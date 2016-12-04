@@ -1,0 +1,16 @@
+Henry's Little Web Scraper
+
+Entry #1 : 
+Timestamp: 2016-12-04 08:32:58.194458 (local time) 
+Site URL: https://www.happyballs.com/collections/standard-antenna-balls
+
+Website Title: 
+  Standard Antenna Balls – HappyBalls.com
+  
+Entry #1 : 
+Timestamp: 2016-12-04 08:33:33.932186 (UTC) 
+Site URL: https://www.happyballs.com/collections/standard-antenna-balls
+
+Website Title: 
+  Standard Antenna Balls – HappyBalls.com
+  
